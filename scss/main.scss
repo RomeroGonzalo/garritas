@@ -274,6 +274,8 @@
   .li--footer {
     color: white;
     margin: 10px;
+    text-decoration: none;
+    list-style-type: none;
   }
   
   .margin__top--footer {
@@ -341,24 +343,20 @@
     background-color: red;
   }
 
-  p.card__descripcion {
-    @if ($caracteristica == Cariñoso) {
-      background-color: $color-verdepastel;
-      border-color: $color-verdepastel;
-    } @else if ($caracteristica == Educado) {
-      background-color: $color-amarillopastel;
-      border-color: $color-amarillopastel;
-    } @else if ($caracteristica == Cariñosa) {
-      background-color: $color-verdepastel;
-      border-color: $color-verdepastel;
-    } @else if ($caracteristica == Inteligente) {
-      background-color: $color-azulpastel;
-      border-color: $color-azulpastel;
-    } @else if ($caracteristica == Dormilón) {
-      background-color: $color-rosapastel;
-      border-color: $color-rosapastel;
-    } @else {
-      background-color: red;
-      border-color: red;
-    }
+  .max600 {
+    max-height: 600px;
+  }
+
+  .h1--home {
+    padding: 50px;
+    margin: 1000px;
+  }
+
+  .a--nav {
+    color: black;
+  }
+
+  .p--gridhome {
+    font-size: 1000px;
+    color: white;
   }
