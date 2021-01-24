@@ -18,6 +18,7 @@
   
   .shake:hover {
     animation: bounce;
+    color: $color-azul;
   }
   
   .header__titulo {
@@ -75,6 +76,7 @@
   .centrar {
     text-align: center;
     align-items: center;
+    margin-bottom: 50px;
   }
   
   .margenIzq {
@@ -83,17 +85,25 @@
   
   .grid--home {
     display: grid;
-    grid-template-columns: auto 400px;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
     text-align: center;
     list-style-type: none;
     background-color: $color-gris;
     justify-items: stretch;
+    border-top-right-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
   } 
   
   .grid--home2 {
     @extend .grid--home;
-    grid-template-columns: 400px auto;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 0;
+  }
+
+  .grid--home3 {
+    @extend .grid--home;
+    border-radius: 0;
   }
   
   .foto {
@@ -193,6 +203,9 @@
   
   .backgris {
     background-color: $color-gris;
+    border-radius: 0.3rem;
+    padding: 15px;
+    margin: 10px;
   }
   
   @media only screen and (max-width: 758px) {
@@ -248,14 +261,20 @@
   .subtitulos--home {
     text-align: center;
     margin: 50px;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: lighter;
+  }
+
+  @media only screen and (max-width: 758px) {
+    .subtitulos--home {
+        margin: 10px;
+    }
   }
   
   .flecha {
     margin-right: 8px;
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
   }
   
   .grid--footer {
@@ -274,6 +293,8 @@
   .li--footer {
     color: white;
     margin: 10px;
+    text-decoration: none;
+    list-style-type: none;
   }
   
   .margin__top--footer {
@@ -305,6 +326,7 @@
     list-style-type: none;
     padding: 10px 15px;
     margin-top: 10px;
+    cursor: pointer;
   }
   
   .imagen {
@@ -336,29 +358,79 @@
     margin: 50px;
   }
 
+  @media only screen and (max-width: 758px) {
+    .p--denuncias {
+        margin: 10px;
+    }
+  }
+
   .boton--donaciones {
     font-size: 50px;
     background-color: red;
   }
 
-  p.card__descripcion {
-    @if ($caracteristica == Cariñoso) {
-      background-color: $color-verdepastel;
-      border-color: $color-verdepastel;
-    } @else if ($caracteristica == Educado) {
-      background-color: $color-amarillopastel;
-      border-color: $color-amarillopastel;
-    } @else if ($caracteristica == Cariñosa) {
-      background-color: $color-verdepastel;
-      border-color: $color-verdepastel;
-    } @else if ($caracteristica == Inteligente) {
-      background-color: $color-azulpastel;
-      border-color: $color-azulpastel;
-    } @else if ($caracteristica == Dormilón) {
-      background-color: $color-rosapastel;
-      border-color: $color-rosapastel;
-    } @else {
-      background-color: red;
-      border-color: red;
+  .max600 {
+    max-height: 600px;
+  }
+
+  .grid--ayudanos {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      text-align: center;
+      align-items: center;
+      grid-gap: 30px;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px
+  }
+
+  @media only screen and (max-width: 758px) {
+    .grid--denuncias {
+        grid-template-columns: auto;
     }
   }
+
+  .h1--home {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-size: 90px;
+    font-weight: 900;
+  }
+
+  .p--gridhome {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+
+  .p--home__flechas {
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    margin: 30px;
+  }
+
+  .jumbotron--2 {
+    padding: 2rem 1rem;
+    border-radius: 0.3rem;
+  }
+
+  .jumbotron--3 {
+    background-color: $color-gris;
+    border-radius: 0.3rem;
+  }
+
+  .img--h1 {
+    border-top-left-radius: 0.3rem;
+  }
+
+  @media only screen and (max-width: 758px) {
+    .img--h1 {
+        border-top-right-radius: 0.3rem;
+    }
+  }
+
+
+
