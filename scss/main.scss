@@ -426,3 +426,11 @@
     border-top-left-radius: 0.3rem;
   }
 
+  @media only screen and (max-width: 758px) {
+    .img--h1 {
+        border-top-right-radius: 0.3rem;
+    }
+  }
+
+
+
