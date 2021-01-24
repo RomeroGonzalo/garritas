@@ -8,7 +8,8 @@
   background-color: black; }
 
 .shake:hover {
-  animation: bounce; }
+  animation: bounce;
+  color: #0597ff; }
 
 .header__titulo {
   font-weight: bold;
@@ -57,22 +58,29 @@
 
 .centrar {
   text-align: center;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 50px; }
 
 .margenIzq {
   margin-left: 20px; }
 
-.grid--home, .grid--home2 {
+.grid--home, .grid--home2, .grid--home3 {
   display: grid;
-  grid-template-columns: auto 400px;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
   text-align: center;
   list-style-type: none;
-  background-color: #e3e4e6;
-  justify-items: stretch; }
+  background-color: #e9ecef;
+  justify-items: stretch;
+  border-top-right-radius: 0.3rem;
+  border-top-left-radius: 0.3rem; }
 
 .grid--home2 {
-  grid-template-columns: 400px auto; }
+  grid-template-columns: 1fr 2fr;
+  border-radius: 0; }
+
+.grid--home3 {
+  border-radius: 0; }
 
 .foto {
   width: 100%;
@@ -95,10 +103,10 @@
   transition: all 0.3s ease 0s;
   flex-wrap: wrap;
   justify-items: stretch;
-  background-color: #e3e4e6; }
+  background-color: #e9ecef; }
 
 .card__background {
-  background-color: #e3e4e6; }
+  background-color: #e9ecef; }
 
 .card__hover:hover {
   transform: translate(-2%, -2%); }
@@ -123,7 +131,7 @@
   margin-bottom: 30px; }
 
 @media only screen and (max-width: 758px) {
-  .grid--home, .grid--home2 {
+  .grid--home, .grid--home2, .grid--home3 {
     grid-template-columns: auto; } }
 
 @media only screen and (max-width: 758px) {
@@ -149,7 +157,10 @@
   margin: 20px; }
 
 .backgris {
-  background-color: #e3e4e6; }
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+  padding: 15px;
+  margin: 10px; }
 
 @media only screen and (max-width: 758px) {
   .grid--consultas {
@@ -195,13 +206,17 @@ footer {
 .subtitulos--home {
   text-align: center;
   margin: 50px;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: lighter; }
+
+@media only screen and (max-width: 758px) {
+  .subtitulos--home {
+    margin: 10px; } }
 
 .flecha {
   margin-right: 8px;
-  width: 40px;
-  height: 40px; }
+  width: 80px;
+  height: 80px; }
 
 .grid--footer {
   display: grid;
@@ -215,7 +230,9 @@ footer {
 
 .li--footer {
   color: white;
-  margin: 10px; }
+  margin: 10px;
+  text-decoration: none;
+  list-style-type: none; }
 
 .margin__top--footer {
   margin-top: 10px; }
@@ -240,7 +257,8 @@ footer {
   display: inline-block;
   list-style-type: none;
   padding: 10px 15px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  cursor: pointer; }
 
 .imagen {
   width: 100%;
@@ -265,10 +283,57 @@ footer {
 .p--denuncias {
   margin: 50px; }
 
+@media only screen and (max-width: 758px) {
+  .p--denuncias {
+    margin: 10px; } }
+
 .boton--donaciones {
   font-size: 50px;
   background-color: red; }
 
-p.card__descripcion {
-  background-color: #ecf279;
-  border-color: #ecf279; }
+.max600 {
+  max-height: 600px; }
+
+.grid--ayudanos {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  text-align: center;
+  align-items: center;
+  grid-gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px; }
+
+@media only screen and (max-width: 758px) {
+  .grid--denuncias {
+    grid-template-columns: auto; } }
+
+.h1--home {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-size: 90px;
+  font-weight: 900; }
+
+.p--gridhome {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 50px; }
+
+.p--home__flechas {
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  margin: 30px; }
+
+.jumbotron--2 {
+  padding: 2rem 1rem;
+  border-radius: 0.3rem; }
+
+.jumbotron--3 {
+  background-color: #e9ecef;
+  border-radius: 0.3rem; }
+
+.img--h1 {
+  border-top-left-radius: 0.3rem; }
