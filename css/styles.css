@@ -349,9 +349,18 @@ footer {
   grid-template-columns: auto auto;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
-  margin: 20px; }
+  text-align: center; }
 
 @media only screen and (max-width: 758px) {
   .grid--idioma {
     grid-template-columns: auto; } }
+
+.div--idioma {
+  margin: 10px; }
+
+.h5--idioma {
+  margin-top: 40px;
+  color: #da0909; }
+
+.ul--idioma {
+  list-style-type: none; }

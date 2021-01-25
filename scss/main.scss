@@ -5,10 +5,7 @@
     font-family: 'Roboto Condensed', sans-serif;
   }
 
-  @import "utilidades/tipografia";
   @import "utilidades/colores";
-  @import "utilidades/variables";
-  @import "utilidades/each";
 
   
   
@@ -440,12 +437,24 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin: 20px;
   }
 
   @media only screen and (max-width: 758px) {
     .grid--idioma {
         grid-template-columns: auto;
+
     }
   }
 
+  .div--idioma {
+    margin: 10px;
+  }
+
+  .h5--idioma {
+    margin-top: 40px;
+    color: $color-rojo;
+  }
+
+  .ul--idioma {
+    list-style-type: none;
+  }
