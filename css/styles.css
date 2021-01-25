@@ -343,3 +343,15 @@ footer {
 @media only screen and (max-width: 758px) {
   .img--h1 {
     border-top-right-radius: 0.3rem; } }
+
+.grid--idioma {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 20px; }
+
+@media only screen and (max-width: 758px) {
+  .grid--idioma {
+    grid-template-columns: auto; } }
