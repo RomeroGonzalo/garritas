@@ -44,15 +44,19 @@ body {
 .margin--top__inicio {
   margin-top: 150px; }
 
+.margin--top__home {
+  margin-top: 150px; }
+
+@media only screen and (max-width: 768px) {
+  .margin--top__home {
+    margin-top: 50px; } }
+
 @media only screen and (max-width: 768px) {
   .order2 {
     order: 2; } }
 
 .centrar {
   margin: auto; }
-
-header {
-  background-color: black; }
 
 .boton, .boton--contacto, .boton--footer, .boton--denuncias {
   border-style: solid;
@@ -75,6 +79,13 @@ header {
   background-color: white;
   color: black;
   text-decoration: none; }
+
+@media only screen and (max-width: 768px) {
+  .boton, .boton--contacto, .boton--footer, .boton--denuncias {
+    margin-bottom: 50px; } }
+
+header {
+  background-color: black; }
 
 .boton--contacto {
   width: 100%;

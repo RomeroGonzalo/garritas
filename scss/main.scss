@@ -56,6 +56,16 @@
   margin-top: 150px;
 }
 
+.margin--top__home {
+  margin-top: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+  .margin--top__home {
+    margin-top: 50px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .order2 {
     order: 2;
@@ -65,6 +75,40 @@
 .centrar {
   margin: auto;
 }
+
+.boton {
+  border-style: solid;
+  width: auto;
+  color: white;
+  border-color: $color-azul;
+  text-decoration: none;
+  border-radius: 5px;
+  line-height: 1.15;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.69px;
+  padding: 12px 24px;
+  background-color: $color-azul;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.boton:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .boton {
+    margin-bottom: 50px;
+  }
+}
+
+
+
+
 
 
 
@@ -116,29 +160,7 @@
 
   
   
-  .boton {
-    border-style: solid;
-    width: auto;
-    color: white;
-    border-color: $color-azul;
-    text-decoration: none;
-    border-radius: 5px;
-    line-height: 1.15;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 1.69px;
-    padding: 12px 24px;
-    background-color: $color-azul;
-    text-transform: uppercase;
-    cursor: pointer;
-    display: inline-block;
-  }
   
-  .boton:hover {
-    background-color: white;
-    color: black;
-    text-decoration: none;
-  }
   
   .boton--contacto {
     @extend .boton;
