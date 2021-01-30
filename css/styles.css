@@ -45,7 +45,7 @@ body {
   margin-top: 150px; }
 
 .margin--top__home {
-  margin-top: 150px; }
+  margin-top: 100px; }
 
 @media only screen and (max-width: 768px) {
   .margin--top__home {
@@ -83,6 +83,65 @@ body {
 @media only screen and (max-width: 768px) {
   .boton, .boton--contacto, .boton--footer, .boton--denuncias {
     margin-bottom: 50px; } }
+
+.suscripcion {
+  align-items: center;
+  text-align: center; }
+
+.div--separador, .div--separador2 {
+  background-color: #E6F7FF;
+  margin: 30px;
+  padding: 30px; }
+
+.div--separador__items {
+  text-align: center;
+  align-items: center; }
+
+.h2--separador {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 50px; }
+
+@media only screen and (max-width: 768px) {
+  .h2--separador {
+    font-size: 45px; } }
+
+.img--separador {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px; }
+
+@media only screen and (max-width: 768px) {
+  .img--separador {
+    margin-top: 50px; } }
+
+.p--separador {
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 200%; }
+
+.div--separador2 {
+  background-color: white;
+  margin-top: 50px; }
+
+.div--separador__items2 {
+  text-align: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.img--separador2 {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.div--separador__items2:hover {
+  transform: translate(-2%, -2%); }
+
+footer {
+  background-color: #E6F7FF;
+  padding: 30px;
+  margin-top: 40px; }
 
 header {
   background-color: black; }
@@ -192,11 +251,6 @@ header {
 @media only screen and (max-width: 758px) {
   .grid--consultas {
     grid-template-columns: auto; } }
-
-footer {
-  background-color: black;
-  color: white;
-  width: 100%; }
 
 .logo {
   border-radius: 100%;
@@ -378,10 +432,6 @@ footer {
 
 .div--idioma {
   margin: 10px; }
-
-.h5--idioma {
-  margin-top: 40px;
-  color: #da0909; }
 
 .ul--idioma {
   list-style-type: none; }
