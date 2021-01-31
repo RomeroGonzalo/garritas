@@ -56,6 +56,16 @@
   margin-top: 150px;
 }
 
+.margin--top__ayuda {
+  margin-top: 130px;
+}
+
+@media only screen and (max-width: 768px) {
+  .margin--top__ayuda {
+    margin-top: 70px;
+  }
+}
+
 .margin--top__home {
   margin-top: 100px;
 }
@@ -111,6 +121,7 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  margin-bottom: 80px;
 }
 
 .boton--suscripcion {
@@ -132,6 +143,13 @@
 .div--separador__items {
   text-align: left;
   align-items: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .div--separador__items {
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .h3--separador {
@@ -160,6 +178,12 @@
   margin-bottom: 80px;
 }
 
+@media only screen and (max-width: 768px) {
+  .p--separador {
+    margin-bottom: 15px;
+  }
+}
+
 .div--separador2 {
   @extend .div--separador;
   background-color: white;
@@ -170,6 +194,7 @@
   text-align: center;
   align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 10px;
 }
 
 .img--separador2 {
@@ -190,11 +215,79 @@ footer {
 }
 
 .h1--home {
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: 50px;
   font-size: 90px;
   font-weight: 900;
 }
+
+@media only screen and (max-width: 768px) {
+  .h1--home {
+    margin-top: 0;
+    text-align: center;
+    font-size: 80px;
+  }
+}
+
+.nav--texto {
+  font-size: 20px;
+}
+
+.h4--footer__quienes {
+  color: $color-azul
+}
+
+@media only screen and (max-width: 768px) {
+  .h4--footer__quienes {
+    margin-top: 40px;
+  }
+}
+
+.h4--footer__contacto {
+  color: $color-azul
+}
+
+@media only screen and (max-width: 768px) {
+  .h4--footer__contacto {
+    margin-top: 10px;
+  }
+}
+
+.p--footer__cel {
+  font-size: 150%;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.p--footer__texto {
+  font-weight: lighter;
+}
+
+.lead2 {
+  font-size: 1.50rem;
+  font-weight: 300;
+}
+
+.div--footer__links {
+  color: $color-azul;
+}
+
+@media only screen and (max-width: 768px) {
+  .div--footer__links {
+    text-align: left;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .p--footer__derechos {
+    text-align: left;
+  }
+}
+
+
+
+
 
 
 
