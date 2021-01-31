@@ -5,7 +5,7 @@
   font-family: 'Roboto Condensed', sans-serif; }
 
 body {
-  background-image: url(../imagenes/background.jpg); }
+  background-image: url(../imagenes2/background.png); }
 
 .navbar--back__blanco {
   background-color: white; }
@@ -56,9 +56,10 @@ body {
     order: 2; } }
 
 .centrar {
-  margin: auto; }
+  margin: auto;
+  background-color: white; }
 
-.boton, .boton--contacto, .boton--footer, .boton--denuncias {
+.boton, .boton--suscripcion, .boton--contacto, .boton--footer, .boton--denuncias {
   border-style: solid;
   width: auto;
   color: white;
@@ -75,18 +76,23 @@ body {
   cursor: pointer;
   display: inline-block; }
 
-.boton:hover, .boton--contacto:hover, .boton--footer:hover, .boton--denuncias:hover {
+.boton:hover, .boton--suscripcion:hover, .boton--contacto:hover, .boton--footer:hover, .boton--denuncias:hover {
   background-color: white;
   color: black;
   text-decoration: none; }
 
 @media only screen and (max-width: 768px) {
-  .boton, .boton--contacto, .boton--footer, .boton--denuncias {
+  .boton, .boton--suscripcion, .boton--contacto, .boton--footer, .boton--denuncias {
     margin-bottom: 50px; } }
 
 .suscripcion {
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  justify-content: center; }
+
+@media only screen and (max-width: 768px) {
+  .boton--suscripcion {
+    margin-top: 20px; } }
 
 .div--separador, .div--separador2 {
   background-color: #E6F7FF;
@@ -94,17 +100,15 @@ body {
   padding: 30px; }
 
 .div--separador__items {
-  text-align: center;
-  align-items: center; }
+  text-align: left;
+  align-items: left; }
 
-.h2--separador {
-  text-align: center;
-  margin-bottom: 30px;
+.h3--separador {
+  text-align: left;
   font-size: 50px; }
 
-@media only screen and (max-width: 768px) {
-  .h2--separador {
-    font-size: 45px; } }
+.h2--separador {
+  color: #096DD9; }
 
 .img--separador {
   height: 100px;
@@ -116,9 +120,8 @@ body {
     margin-top: 50px; } }
 
 .p--separador {
-  text-align: center;
-  margin-bottom: 80px;
-  font-size: 200%; }
+  text-align: left;
+  margin-bottom: 80px; }
 
 .div--separador2 {
   background-color: white;
@@ -143,8 +146,11 @@ footer {
   padding: 30px;
   margin-top: 40px; }
 
-header {
-  background-color: black; }
+.h1--home {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-size: 90px;
+  font-weight: 900; }
 
 .boton--contacto {
   width: 100%;
@@ -382,12 +388,6 @@ header {
 @media only screen and (max-width: 758px) {
   .grid--denuncias {
     grid-template-columns: auto; } }
-
-.h1--home {
-  margin-top: 80px;
-  margin-bottom: 50px;
-  font-size: 90px;
-  font-weight: 900; }
 
 .p--gridhome {
   font-size: 30px;

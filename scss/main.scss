@@ -8,7 +8,7 @@
   @import "utilidades/colores";
 
  body {
-   background-image: url(../imagenes/background.jpg);
+   background-image: url(../imagenes2/background.png);
  }
 
 .navbar--back__blanco {
@@ -74,6 +74,7 @@
 
 .centrar {
   margin: auto;
+  background-color: white;
 }
 
 .boton {
@@ -109,6 +110,17 @@
 .suscripcion {
   align-items: center;
   text-align: center;
+  justify-content: center;
+}
+
+.boton--suscripcion {
+  @extend .boton;
+}
+
+@media only screen and (max-width: 768px) {
+  .boton--suscripcion {
+    margin-top: 20px;
+  }
 }
 
 .div--separador {
@@ -118,23 +130,18 @@
 }
 
 .div--separador__items {
-  text-align: center;
-  align-items: center;
+  text-align: left;
+  align-items: left;
 }
 
-.h2--separador {
-  text-align: center;
-  margin-bottom: 30px;
+.h3--separador {
+  text-align: left;
   font-size: 50px;
 }
 
-@media only screen and (max-width: 768px) {
-  .h2--separador {
-   font-size: 45px;
-  }
+.h2--separador {
+  color: $color-azul;
 }
-
-
 
 .img--separador {
   height: 100px;
@@ -149,9 +156,8 @@
 }
 
 .p--separador {
-  text-align: center;
+  text-align: left;
   margin-bottom: 80px;
-  font-size: 200%;
 }
 
 .div--separador2 {
@@ -183,6 +189,22 @@ footer {
   margin-top: 40px;
 }
 
+.h1--home {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-size: 90px;
+  font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -215,10 +237,6 @@ footer {
 
 
 
-  
-  header { 
-    background-color: black;
-  }
   
  
   
@@ -530,12 +548,7 @@ footer {
     }
   }
 
-  .h1--home {
-    margin-top: 80px;
-    margin-bottom: 50px;
-    font-size: 90px;
-    font-weight: 900;
-  }
+  
 
   .p--gridhome {
     font-size: 30px;
