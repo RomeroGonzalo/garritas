@@ -11,6 +11,12 @@
    background-image: url(../imagenes2/background.png);
  }
 
+ @media only screen and (max-width: 768px) {
+  body {
+    background-image: none;
+  }
+}
+
 .navbar--back__blanco {
   background-color: white;
 }
@@ -199,10 +205,6 @@
   @extend .p--separador; 
     background-color: white;
 }
-
-
-
-
 
 .div--separador2 {
   margin: 30px;
