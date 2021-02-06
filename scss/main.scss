@@ -32,6 +32,13 @@
   margin-left: 30px;
 }
 
+@media only screen and (max-width: 768px) {
+  .header__titulo {
+    margin-left: 0px;
+  }
+}
+
+
 .header__logo {
   border-radius: 100%;
   height: 60px;
@@ -42,7 +49,14 @@
   margin-right: 20px;
 }
 
-.nav-item__home {
+@media only screen and (max-width: 768px) {
+  .header__logo {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+}
+
+.nav--item__home {
   margin-left: 30px;
   margin-right: 30px;
 }
@@ -62,14 +76,32 @@
   margin-top: 150px;
 }
 
+@media only screen and (max-width: 768px) {
+  .margin--top__inicio {
+    margin-top: 110px;
+  }
+}
+
+.margin--top__inicio2 {
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .margin--top__inicio2 {
+    margin-top: 70px;
+  }
+}
+
 .margin--top__ayuda {
-  margin-top: 130px;
+  margin-top: 100px;
   background-color: white;
+  margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 768px) {
   .margin--top__ayuda {
-    margin-top: 70px;
+    margin-top: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -83,9 +115,15 @@
   }
 }
 
+.order2 {
+  padding: 0;
+  margin: 0;
+}
+
 @media only screen and (max-width: 768px) {
   .order2 {
     order: 2;
+    text-align: center;
   }
 }
 
@@ -120,7 +158,7 @@
 
 @media only screen and (max-width: 768px) {
   .boton {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -129,6 +167,13 @@
   text-align: center;
   justify-content: center;
   margin-bottom: 80px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .suscripcion {
+  margin-bottom: 0; 
+  }
 }
 
 .boton--suscripcion {
@@ -147,6 +192,12 @@
   padding: 30px;
 }
 
+.div--separador3 {
+  @extend .div--separador;
+  margin: 0;
+  background-color: $color-celeste;
+}
+
 .div--separador__items {
   text-align: left;
   align-items: left;
@@ -162,6 +213,7 @@
 .h3--separador {
   text-align: left;
   font-size: 50px;
+  align-items: center;
 }
 
 .h3--separador2 {
@@ -192,7 +244,7 @@
 
 .p--separador {
   text-align: left;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -216,7 +268,6 @@
   text-align: center;
   align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: 10px;
   background-color: white;
 }
 
@@ -249,11 +300,35 @@ footer {
     margin-top: 0;
     text-align: center;
     font-size: 80px;
+    margin-bottom: 30px;
+  }
+}
+
+.h1--home__cuidados {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 90px;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 768px) {
+  .h1--home__cuidados {
+    margin-top: 0;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 30px;
+    margin-top: 0px;
   }
 }
 
 .nav--texto {
   font-size: 20px;
+}
+
+.nav--texto__colaborar {
+  background-color: $color-azul;
+  color: white;
+  border-radius: 12px;
 }
 
 .h4--footer__quienes {
@@ -262,7 +337,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
   .h4--footer__quienes {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 
@@ -294,6 +369,8 @@ footer {
 
 .div--footer__links {
   color: $color-azul;
+  margin: auto;
+  text-align: left;
 }
 
 @media only screen and (max-width: 768px) {
@@ -305,7 +382,218 @@ footer {
 
 @media only screen and (max-width: 768px) {
   .p--footer__derechos {
-    text-align: left;
+    text-align: center;
+  }
+}
+
+.corazon--footer {
+  width: 50px;
+  height: 50px;
+  padding-bottom: 5px;
+}
+
+.img--nosotros {
+  border-radius: 89px;
+}
+
+.img--equipo {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 15px;
+}
+
+.centrar2 {
+  text-align: center;
+}
+
+.margin--top__equipo {
+  margin-top: 40px;
+}
+
+.h3--equipo {
+  font-size: 50px;
+}
+
+.card2 {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.margin--top__equipo2 {
+  margin-top: 40px;
+}
+
+.card--titulo{
+  padding: 0.75rem 1.25rem;
+  margin-top: 10px;
+  background-color: none;
+  text-align: left;
+}
+
+.img--li__nosotros {
+  margin-right: 20px;
+}
+
+.align--card__nosotros {
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 30px; 
+}
+
+.boton--nosotros {
+  @extend .boton;
+  margin: 30px;  
+}
+
+.back--celeste {
+  background-color: $color-celeste;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .back--celeste {
+    margin-top: 20px;
+  }
+}
+
+
+.margin--bottom__inicio {
+  margin-bottom: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+  .margin--bottom__inicio {
+    margin-bottom: 20px;
+  }
+}
+
+.p--contacto {
+  position: absolute;
+  display: block
+}
+
+.margin--card {
+  margin: 5px;
+}
+
+.texto--video {
+  background-color: $color-celeste;
+  color: $color-azul;
+  align-items: center;
+  margin: auto;
+}
+
+.div--video {
+  background-color: $color-celeste;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.back--form {
+  background-color: $color-gris;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.centrar--form {
+  margin: auto;
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.casilla {
+  width: 20px;
+  height: 20px;
+}
+
+.label--input {
+  margin-left: 10px;
+}
+
+.h2--colaborar {
+  color: $color-azul;
+}
+
+.h1--colaborar {
+    font-size: 90px;
+    font-weight: 900;
+}
+
+.back--celeste__colaborar {
+  background-color: $color-celeste;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 80px;
+}
+
+.width--donaciones {
+  width: 2000px;
+}
+
+.boton--contacto {
+  @extend .boton;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .boton--contacto {
+    font-size: 15px;
+  }
+}
+
+.boton--contacto:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+.form--contacto {
+  font-size: 20px;
+  align-items: center;
+  margin: auto;
+}
+
+.h1--contacto {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  font-size: 90px;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 768px) {
+  .h1--contacto {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 50px;
+  }
+}
+
+.animation--transform:hover {
+  transform: translate(-2%, -2%);
+}
+
+.h3--separador__cards {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.icono--gato {
+  margin-top: 15px;
+}
+
+.p--equipo {
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .h3--tips {
+    margin-top: 10px;
   }
 }
 
@@ -313,47 +601,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
   
  
   
@@ -362,379 +609,3 @@ footer {
   
   
   
-  
-  .boton--contacto {
-    @extend .boton;
-    width: 100%;
-    display: inline-block;
-    font-size: 20px;
-    margin-top: 20px;
-  }
-  
-  .boton--contacto:hover {
-    background-color: white;
-    color: black;
-    text-decoration: none;
-  }
-  
-  .margenIzq {
-    margin-left: 20px;
-  }
-  
-  .grid--home {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
-    text-align: center;
-    list-style-type: none;
-    background-color: $color-gris;
-    justify-items: stretch;
-    border-top-right-radius: 0.3rem;
-    border-top-left-radius: 0.3rem;
-  } 
-  
-  .grid--home2 {
-    @extend .grid--home;
-    grid-template-columns: 1fr 2fr;
-    border-radius: 0;
-  }
-
-  .grid--home3 {
-    @extend .grid--home;
-    border-radius: 0;
-  }
-  
-  .foto {
-    width: 100%;
-    height: 400px;
-    display: flex;
-  }
-  
-  @media only screen and (max-width: 758px) {
-    .foto {
-        height: 300px;
-    }
-  }
-  
-  .negrita {
-    font-weight: bold;
-  }
-  
-  .adoptar__card {
-    grid-column-end: span 4;
-    display: flex;
-    flex-direction: column;
-    line-height: 20px;
-    border: 1px solid;
-    transition: all 0.3s ease 0s;
-    flex-wrap: wrap;
-    justify-items: stretch;
-    background-color: $color-gris;
-  }
-
-  .card__background {
-    background-color: $color-gris;
-  }
-  
-  .card__hover:hover {
-    transform: translate(-2%, -2%);
-  }
-  
-  .card__title {
-    font-weight: bold;
-    font-size: 35px;
-    padding: 0;
-    text-align: center;
-  }
-  
-  .card__edad {
-    text-align: center;
-    font-size: 17px;
-  }
-  
-  .card__descripcion {
-    text-align: center;
-    align-items: center;
-    border: solid;
-    font-size: 18px;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-  
-  @media only screen and (max-width: 758px) {
-    .grid--home {
-        grid-template-columns: auto;
-    }
-  }
-  
-  
-  
-  
-  
-  @media only screen and (max-width: 758px) {
-    .gridAdoptar {
-        grid-template-columns: repeat(8, 40px);     
-    }
-  }
-  
-  .grid--consultas {
-    display: grid;
-    grid-template-columns: 1.5fr auto;
-    grid-gap: 30px;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
-  }
-  
-  .backgris {
-    background-color: $color-gris;
-    border-radius: 0.3rem;
-    padding: 15px;
-    margin: 10px;
-  }
-  
-  @media only screen and (max-width: 758px) {
-    .grid--consultas {
-        grid-template-columns: auto;
-    }
-  }
-  
-  .logo {
-    border-radius: 100%;
-    height: 100px;
-    width: 100px;
-    justify-content: center;
-    margin-top: 7px;
-    align-content: center;
-  }
-  
-  .titulo__h3 {
-    text-align: center;
-    margin: 50px;
-    font-weight: bold;
-    font-size: 50px;
-  }
-  
-  .linea {
-    background-color: $color-azul;
-    width: 3.25rem;
-    height: 8px;
-    margin: 0;
-  }
-  
-  .texto--negro {
-    color: black;
-  }
-  
-  .back--negro {
-    background-color: black;
-  }
-  
-  
-  
-  .subtitulos--home {
-    text-align: center;
-    margin: 50px;
-    font-size: 40px;
-    font-weight: lighter;
-  }
-
-  @media only screen and (max-width: 758px) {
-    .subtitulos--home {
-        margin: 10px;
-    }
-  }
-  
-  .flecha {
-    margin-right: 8px;
-    width: 80px;
-    height: 80px;
-  }
-  
-  .grid--footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    text-align: center;
-  }
-  
-  @media only screen and (max-width: 758px) {
-    .grid--footer {
-        grid-template-columns: auto;
-    }
-  }
-  
-  .li--footer {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-    list-style-type: none;
-  }
-  
-  .margin__top--footer {
-    margin-top: 10px;
-  }
-  
-  .boton--footer {
-    @extend .boton; 
-    display: inline-block;
-    font-size: 14px;
-    padding: 8px 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .boton--footer:hover {
-    background-color: white;
-    color: black;
-  }
-  
-  .input--footer {
-    width: 70%;
-    align-items: center;
-    padding: 5px 20px;;
-  }
-  
-  .redes--footer {
-    display: inline-block;
-    list-style-type: none;
-    padding: 10px 15px;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-  
-  .imagen {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .boton--denuncias {
-    @extend .boton;
-    display: inline-block;
-    font-size: 20px;
-    margin-top: 50px;
-  }
-  
-  .boton--denuncias:hover {
-    background-color: white;
-    color: black;
-    text-decoration: none;
-  }
-  
-  .grid--denuncias {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    text-align: center;
-    align-items: center;
-  }
-  
-  .p--denuncias {
-    margin: 50px;
-  }
-
-  @media only screen and (max-width: 758px) {
-    .p--denuncias {
-        margin: 10px;
-    }
-  }
-
-  .boton--donaciones {
-    font-size: 50px;
-    background-color: red;
-  }
-
-  .max600 {
-    max-height: 600px;
-  }
-
-  .grid--ayudanos {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      text-align: center;
-      align-items: center;
-      grid-gap: 30px;
-      justify-content: space-between;
-      align-items: center;
-      margin: 20px
-  }
-
-  @media only screen and (max-width: 758px) {
-    .grid--denuncias {
-        grid-template-columns: auto;
-    }
-  }
-
-  
-
-  .p--gridhome {
-    font-size: 30px;
-    font-weight: 300;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    align-items: center;
-  }
-
-  .p--home__flechas {
-    font-size: 50px;
-    font-weight: 300;
-    text-align: center;
-    margin: 30px;
-  }
-
-  .jumbotron--2 {
-    padding: 2rem 1rem;
-    border-radius: 0.3rem;
-  }
-
-  .jumbotron--3 {
-    background-color: $color-gris;
-    border-radius: 0.3rem;
-  }
-
-  .img--h1 {
-    border-top-left-radius: 0.3rem;
-  }
-
-  @media only screen and (max-width: 758px) {
-    .img--h1 {
-        border-top-right-radius: 0.3rem;
-    }
-  }
-
-  .grid--idioma {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-  }
-
-  @media only screen and (max-width: 758px) {
-    .grid--idioma {
-        grid-template-columns: auto;
-
-    }
-  }
-
-  .div--idioma {
-    margin: 10px;
-  }
-
-  
-
-  .ul--idioma {
-    list-style-type: none;
-  }
-
-  .centrarimg {
-    margin: auto;
-    text-align: center;
-  }
-
-  .list__no {
-    list-style-type: none;
-    text-decoration: none;
-  }
