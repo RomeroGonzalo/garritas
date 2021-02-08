@@ -144,6 +144,12 @@ body {
   margin: 30px;
   padding: 30px; }
 
+.div--separador4 {
+  background-color: #E6F7FF;
+  margin: 30px;
+  padding: 30px;
+  margin-top: 0px; }
+
 .div--separador3 {
   margin: 0;
   background-color: #E6F7FF; }
@@ -333,7 +339,7 @@ footer {
 
 .align--card__nosotros {
   text-align: left;
-  margin-left: 50px;
+  margin-left: 30px;
   margin-top: 30px; }
 
 .boton--nosotros {
