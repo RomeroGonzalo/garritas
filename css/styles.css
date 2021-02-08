@@ -383,8 +383,7 @@ footer {
 .back--form {
   background-color: #e9ecef;
   border-radius: 10px;
-  padding: 20px;
-  margin-top: 80px; }
+  padding: 20px; }
 
 .centrar--form {
   margin: auto;
@@ -434,17 +433,16 @@ footer {
   margin: auto; }
 
 .h1--contacto {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  font-size: 500%;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  font-size: 90px;
   font-weight: 900; }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   .h1--contacto {
-    font-size: 250%;
-    top: 10%;
-    left: 5%; } }
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 25px; } }
 
 .animation--transform:hover {
   transform: translate(-2%, -2%); }
@@ -463,7 +461,3 @@ footer {
 @media only screen and (max-width: 768px) {
   .h3--tips {
     margin-top: 10px; } }
-
-.home--contacto {
-  position: relative;
-  display: inline-block; }
